@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CoffeeRun</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
+</head>
+
+<body class="container">
+  <header>
+    <h1>CoffeeRun</h1>
+  </header>
+  <section>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <form data-coffee-order="form">
+          <div class="form-group">
+            <label for="coffeeOrder">Coffee Order</label>
+            <input class="form-control" name="coffee" id="coffeeOrder" autofocus>
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input type="email" name="emailAddress" value="" class="form-control" id="emailInput" placeholder="dr@who.com">
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="short">
+              Short
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="tall" checked>
+              Tall
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="grande">
+              Grande
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="flavorShot">Flavor Shot</label>
+            <select class="form-control"  name="flavor" id="flavorShot">
+              <option value="">None</option>
+              <option value="caramel">Caramel</option>
+              <option value="almond">Almond</option>
+              <option value="mocha">Mocha</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="strengthLevel">Caffeine Rating</label>
+            <input class="form-control-range" type="range" name="strength" value="30" id="strengthLevel">
+          </div>
+          <button type="submit" class="btn btn-primary" name="button">Submit</button>
+          <button type="reset" class="btn btn-secondary" name="button">Reset</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/formHandler.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/datastore.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/truck.js" charset="utf-8"></script>
+  <script type="text/javascript" src="scripts/main.js" charset="utf-8"></script>
+</body>
+
+</html>
